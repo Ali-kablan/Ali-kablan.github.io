@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="pageTitle">Al Masa Hotel 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Replace text with img tag if logo image is available -->
+                <img src="images/Logo.png" alt="Al Masa Hotel Logo" data-translate="hotelNameAltText">
+                <!-- <span data-translate="hotelName">Al Masa Hotel 2</span> -->
+            </div>
+
+            <button class="menu-toggle" aria-label="Toggle mobile menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul>
+                <li><a href="#home" data-translate="navHome">Home</a></li>
+                <li><a href="#services" data-translate="navServices">Services</a></li>
+                <li><a href="#rooms" data-translate="navRooms">Rooms</a></li>
+                <li><a href="#meals" data-translate="navMeals">Meals</a></li>
+                <li><a href="#interior" data-translate="navInterior">Interior</a></li>
+                <li><a href="#cafe" data-translate="navCafe">Cafe</a></li>
+                <li><a href="#contact" data-translate="navContact">Contact</a></li>
+
+                <div class="language-switcher">
+                    <button id="lang-en">English</button>
+                    <button id="lang-ar">العربية</button>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-slideshow-container">
+                <div class="hero-bg-slide" style="background-image: linear-gradient(rgba(58, 46, 37, 0.5), rgba(58, 46, 37, 0.5)), url('images/mainUpperPage.jpg');"></div>
+                <div class="hero-bg-slide" style="background-image: linear-gradient(rgba(58, 46, 37, 0.5), rgba(58, 46, 37, 0.5)), url('images/mainUpperpage2.jpg');"></div>
+                <div class="hero-bg-slide" style="background-image: linear-gradient(rgba(58, 46, 37, 0.5), rgba(58, 46, 37, 0.5)), url('images/view5.jpg');"></div>
+            </div>
+            <div class="hero-content">
+                <h1 data-translate="welcomeMessage">Welcome to Al Masa Hotel 2</h1>
+                <p data-translate="welcomeSubtext">Experience luxury and comfort.</p>
+                <!-- Optional: Add a call-to-action button -->
+                <!-- <a href="#contact" class="cta-button" data-translate="ctaBookNow">Book Now</a> -->
+            </div>
+        </section>
+
+        <div class="content-container">
+            <section id="services" class="animate-on-scroll">
+                <h2 data-translate="servicesTitle">Our Services</h2>
+                <div class="services-container">
+                    <div class="service-item">
+                        <img src="images/wifi.png" alt="WiFi Icon" data-translate="serviceWifiAltText">
+                        <h3 data-translate="serviceWifiTitle">Free WiFi</h3>
+                        <p data-translate="serviceWifiDesc">High-speed internet access throughout the hotel.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="images/parking.png" alt="Parking Icon" data-translate="serviceParkingAltText">
+                        <h3 data-translate="serviceParkingTitle">Parking</h3>
+                        <p data-translate="serviceParkingDesc">Secure parking available for guests.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="images/restaurant.png" alt="Restaurant Icon"
+                            data-translate="serviceRestaurantAltText">
+                        <h3 data-translate="serviceRestaurantTitle">Restaurant</h3>
+                        <p data-translate="serviceRestaurantDesc">Delicious meals served daily in our restaurant.</p>
+                    </div>
+                </div>
+
+                <!-- Hall Service Section -->
+                <div class="hall-section animate-on-scroll">
+                    <h3 data-translate="hallTitle">Event Hall</h3>
+
+                    <div class="hall-gallery">
+                        <div class="hall-gallery-main">
+                            <div class="hall-gallery-text">
+                                <h4 data-translate="hallSubtitle">Elegant Celebrations</h4>
+                                <p data-translate="hallDesc">Our elegant event hall is perfect for weddings,
+                                    conferences, and special celebrations. With modern amenities and stunning décor, we
+                                    provide the perfect setting for your memorable moments.</p>
+                                <div class="hall-features">
+                                    <div class="hall-feature">
+                                        <span class="feature-number">200+</span>
+                                        <span data-translate="hallFeatureGuests">Guests Capacity</span>
+                                    </div>
+                                    <div class="hall-feature">
+                                        <span class="feature-number">50+</span>
+                                        <span data-translate="hallFeatureEvents">Events Per Year</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hall-gallery-showcase">
+                                <div class="hall-showcase-main">
+                                    <img src="images/Stage1.jpg" alt="Main Hall View" class="active"
+                                        data-translate="hallMainAltText">
+                                    <img src="images/stage2.jpg" alt="Hall Setup" data-translate="hallMainAltText">
+                                    <img src="images/stage3.jpg" alt="Wedding Setup" data-translate="hallMainAltText">
+                                    <img src="images/stage4.jpg" alt="Celebration Setup"
+                                        data-translate="hallMainAltText">
+                                    <img src="images/stage5.jpg" alt="Conference Setup"
+                                        data-translate="hallMainAltText">
+                                </div>
+                                <div class="hall-showcase-thumbs">
+                                    <img src="images/Stage1.jpg" alt="Event Hall" class="active"
+                                        data-translate="hallThumb1AltText" data-index="0">
+                                    <img src="images/stage2.jpg" alt="Hall Setup" data-translate="hallThumb2AltText"
+                                        data-index="1">
+                                    <img src="images/stage3.jpg" alt="Wedding Setup" data-translate="hallThumb3AltText"
+                                        data-index="2">
+                                    <img src="images/stage4.jpg" alt="Celebration Setup"
+                                        data-translate="hallThumb4AltText" data-index="3">
+                                    <img src="images/stage5.jpg" alt="Conference Setup"
+                                        data-translate="hallThumb5AltText" data-index="4">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="rooms" class="animate-on-scroll">
+                <h2 data-translate="roomsTitle">Rooms & Pricing</h2>
+                <div class="rooms-container">
+                    <div class="room-item">
+                        <img src="images/room3.jpg" alt="Deluxe Room" data-translate="roomDeluxeAltText">
+                        <div class="room-details">
+                            <h3 data-translate="roomDeluxeTitle">Deluxe Suite</h3>
+                            <p data-translate="roomDeluxeDesc">Spacious suite with separate living area, modern
+                                amenities, and stunning views.</p>
+                            <div class="room-price" data-translate="roomDeluxePrice">Starts from 250 D</div>
+                        </div>
+                    </div>
+                    <div class="room-item">
+                        <img src="images/room1.jpg" alt="Standard Room" data-translate="roomStandardAltText">
+                        <div class="room-details">
+                            <h3 data-translate="roomStandardTitle">Standard Room</h3>
+                            <p data-translate="roomStandardDesc">Comfortable room with all essential amenities for a
+                                pleasant stay.</p>
+                            <div class="room-price" data-translate="roomStandardPrice">Starts from 250 D</div>
+                        </div>
+                    </div>
+                    <div class="room-item">
+                        <img src="images/room2.jpg" alt="Premium Room" data-translate="roomPremiumAltText">
+                        <div class="room-details">
+                            <h3 data-translate="roomPremiumTitle">Premium Room</h3>
+                            <p data-translate="roomPremiumDesc">Elegant room with premium furnishings and enhanced
+                                amenities.</p>
+                            <div class="room-price" data-translate="roomPremiumPrice">Starts from 250 D</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="meals" class="animate-on-scroll">
+                <h2 data-translate="mealsTitle">Dining & Meals</h2>
+                <div class="meals-container">
+                    <div class="meal-item">
+                        <img src="images/meals3.jpg" alt="Dining Selection" data-translate="mealSelectionAltText">
+                        <h3 data-translate="mealSelectionTitle">Gourmet Selection</h3>
+                        <p data-translate="mealSelectionDesc">Enjoy our extensive selection of freshly prepared meals
+                            and desserts.</p>
+                    </div>
+                    <div class="meal-item">
+                        <img src="images/meals1.jpg" alt="Breakfast Buffet" data-translate="mealBreakfastAltText">
+                        <h3 data-translate="mealBreakfastTitle">Breakfast Buffet</h3>
+                        <p data-translate="mealBreakfastDesc">Start your day with our wide selection of breakfast
+                            options.</p>
+                    </div>
+                    <div class="meal-item">
+                        <img src="images/meals2.jpg" alt="Restaurant Interior" data-translate="mealDinnerAltText">
+                        <h3 data-translate="mealDinnerTitle">Elegant Dining</h3>
+                        <p data-translate="mealDinnerDesc">Enjoy exquisite local and international cuisine for lunch and
+                            dinner.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="interior" class="animate-on-scroll">
+                <h2 data-translate="interiorTitle">Hotel Interior</h2>
+                <div class="interior-container">
+                    <div class="interior-item">
+                        <img src="images/inside1.jpg" alt="Hotel Lobby" data-translate="interiorLobbyAltText">
+                    </div>
+                    <div class="interior-item">
+                        <img src="images/inside3.jpg" alt="Hotel Courtyard" data-translate="interiorCourtyardAltText">
+                    </div>
+                    <div class="interior-item">
+                        <img src="images/inside4.jpg" alt="Hotel Common Area" data-translate="interiorCommonAreaAltText">
+                    </div>
+                </div>
+            </section>
+
+            <section id="cafe" class="animate-on-scroll">
+                <h2 data-translate="cafeTitle">Hotel Cafe</h2>
+                <div class="cafe-section">
+                    <div class="cafe-content">
+                        <div>
+                            <h3 data-translate="cafeSubtitle">Refreshments & Snacks</h3>
+                            <p data-translate="cafeDesc">Visit our cafe for freshly brewed coffee, tea, and a variety of
+                                snacks and refreshments. Perfect for casual meetings or a relaxing break during your
+                                stay.</p>
+                        </div>
+                        <div>
+                            <img src="images/Coffe1.jpg" alt="Hotel Cafe" class="cafe-image"
+                                data-translate="cafeImageAltText">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="animate-on-scroll">
+                <div class="contact-wrapper">
+                    <div class="contact-heading">
+                        <h2 data-translate="contactTitle">Contact Information</h2>
+                        <div class="contact-separator"></div>
+                    </div>
+
+                    <div class="contact-container">
+                        <div class="contact-details">
+                            <p class="contact-intro" data-translate="contactIntro">نحن نسعد بالتواصل معكم. يمكنكم
+                                زيارتنا في فندق الماسة 2 أو التواصل معنا عبر الهاتف أو البريد الإلكتروني.</p>
+
+                            <h3 data-translate="contactDetailsHeading">Our contact details:</h3>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="address-icon"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <p data-translate="addressText">مصراتة - شارع بنغازي</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="phone-icon"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <p>+218 91-3423000</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="social-icon"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <p><span data-translate="instagramLabel">Instagram:</span> <a
+                                            href="https://www.instagram.com/HOTEL_ALMASAH2"
+                                            target="_blank">HOTEL_ALMASAH2</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="email-icon"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <p><a href="mailto:info@almasahotel.com">info@almasahotel.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.3554126543967!2d15.092358515201622!3d32.37777478109791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a158c8840dfa0f%3A0x51f7b599109e9cc2!2zOTM0WCtGSCwg2YXYtdix2KfYqtip8J-Op!5e0!3m2!1sar!2s!4v1618916270408!5m2!1sar!2s"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p data-translate="copyright">&copy; 2025 Al Masa Hotel 2. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
